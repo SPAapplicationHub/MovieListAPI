@@ -1,0 +1,41 @@
+GET http://localhost:8080/api/movies
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlcyI6WyJ2aWV3ZXIiLCJhZG1pbiJdLCJpYXQiOjE2NDkwNzk0NjksImV4cCI6MTY0OTA4MDM2OX0.VXYY-X7nT8fsC9d47LdKG2p7OBEklG-IvdafBQn--Sk
+
+###
+
+POST http://localhost:8080/api/movies
+Content-Type: application/json
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlcyI6WyJ2aWV3ZXIiLCJhZG1pbiJdLCJpYXQiOjE2NDkwNzk0NjksImV4cCI6MTY0OTA4MDM2OX0.VXYY-X7nT8fsC9d47LdKG2p7OBEklG-IvdafBQn--Sk
+
+[{
+"id": "1",
+"title":"Forest Gump",
+"description":"Tom Hanks as ForestGump"
+},
+{
+"id": "2",
+"title":"Forest Gump",
+"description":"Tom Hanks as ForestGump"
+},
+{
+"id": "3",
+"title":"Forest Gump",
+"description":"Tom Hanks as ForestGump"
+},
+{
+"id": "4",
+"title":"Forest Gump",
+"description":"Tom Hanks as ForestGump"
+}]
+
+###
+
+POST http://localhost:8080/api/auth
+Content-Type: application/json
+
+{
+"email": "testuser@testing.com",
+"password":"password123"
+}
+
+###
